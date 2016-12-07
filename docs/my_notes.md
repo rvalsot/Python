@@ -27,7 +27,58 @@ Comments are done the next way:
 # This is a comment:
 ```
 
-__Input / Output__
+### Variables
+
+To remember:
+* Can start with either letters or underscores, and contain numbers in their names;
+* The language is case sensitive
+
+__Types__
+
+* Integers: do not posses floating points;
+*
+
+### Arithmetic
+
+Integer operations:
+
+| Operator | Use |
+| -------- | --- |
+| `a + b`  | Addition |
+| `a - b`  | Subtraction |
+| `a * b`  | Multiplication |
+| `a / b`  | Division, that will return a float number |
+| `a // b` | Division, that will return an integer, discarding decimal parts |
+| `a % b`  | Modulus |
+
+Operator precedence is the general algebraic order.
+
+### Input / Output
+
+__Printing__
+
+As simple as:
+``` python
+print("Hi folks!")
+```
+
+__Brotips__:
+
+If you have a string, you can slice it using brackets:
+``` python
+my_string = "Vaquita3"
+print(my_string[3:5]) # This will output 'ui'
+```
+You can repeat printing by multiplying it:
+``` python
+print(my_string * 2) # This will print: 'Vaquita3 Vaquita3'
+```
+You can check if there's a substring within another with the keyword `in`
+``` python
+print("3" in my_string) # This will print 'True'
+```
+
+__Console Input__
 
 To log on the console, use `print(what)` and `input("Message: ")` to receive data:
 ``` python
