@@ -2,9 +2,9 @@
 
 From the Udemy Course with the same name by: Tim Buchalka, available [here](https://www.udemy.com/python-the-complete-python-developer-course/learn/v4/overview)
 
-## Installation in Ubuntu:
+##  Installation
 
-Mostly, Linux distributions come with Python 3.5+ and Python 2.7+, to check it:
+Mostly, Linux distributions, Ubuntu and Fedora our concernts, come with Python 3.5+ and Python 2.7+, to check it:
 ``` shell
 $ python3 -V
 $ 3.5.2
@@ -16,8 +16,8 @@ The current version is about `3.5.2+`.
 Python is an Object-Oriented-Interpreted Language, can run in almost all OS.
 
 Typing:
-* It is strictly typed.
-* It is dynamically typed.
+* It is strictly typed;
+* It is dynamically typed;
 
 __Comments__
 
@@ -132,7 +132,7 @@ it continues here!"""
 
 First brotip: do not forget well-done indentation in your program.
 
-__If Controls__
+__If Group__
 
 The If structure is the following:
 ``` python  
@@ -144,11 +144,50 @@ else:
   # Well, do this
 ```
 
+Tests for not emptiness are:
+``` python
+x
+if x:
+  # do something
+```
+This will evaluate to `False` as `x` is not filled.
+
+Conditions for existence check if `s` exists within some context:
+``` python
+if letter in word:
+  #do something
+else:
+  #do otherwise
+```
+
 Tests Operators include:
 
 | Operator | Use |
 | -------- | --- |
 | `==` | Equals |
-| `!=` | Not Equal
+| `!=` | Not Equal |
 | `>`, `>=` | Greater than, Greater or Equal to |
-| `<`, `<=` | Lesser than, Lesser or Equal to | 
+| `<`, `<=` | Lesser than, Lesser or Equal to |
+
+__For Loops__
+
+
+There are several forms of the `for` loops, covering:
+
+* Standard `for` in a range.
+* For-each iteration
+* Stepped for loop, with a step different that 1
+
+``` python
+for i in range (your_range):
+  # do something
+
+for i in list_of_stuff:
+  # for each approximation
+
+for i in range(begin, end, step):
+  # stepped iteration
+```
+
+Brotips
+* `len(some)` is a good help to set a range.
